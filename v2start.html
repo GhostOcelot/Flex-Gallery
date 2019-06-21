@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kalkulator</title>
+  <title>Flex Gallery</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -25,17 +26,16 @@
 
     nav {
       background-color: #2d2827;
-      ;
+      padding-right: 50px;
       width: 100%;
       color: white;
-      text-align: center;
+      text-align: right;
       line-height: 70px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 20px;
+      font-family: 'Slabo 27px', serif;
+      font-size: 30px;
     }
 
     section {
-      margin: 50px;
       width: 90vw;
       display: flex;
       justify-content: space-around;
@@ -44,8 +44,8 @@
     }
 
     div {
-      margin: 20px 0;
-      flex-basis: 20vw;
+      margin: 20px 0 0 0;
+      flex-basis: 21.5vw;
       height: 15vw;
       /* border: 1px solid black; */
       overflow: hidden;
@@ -64,44 +64,45 @@
 
     footer {
       background-color: #2d2827;
-      ;
+      margin-top: 20px;
       width: 100%;
       color: white;
       text-align: center;
-      line-height: 70px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 40px;
+      font-family: 'Slabo 27px', serif;
       font-size: 20px;
     }
 
     @media (max-width: 1800px) {
       div {
-        flex-basis: 28vw;
+        flex-basis: 28.5vw;
         height: 21vw;
       }
     }
 
     @media (max-width: 1100px) {
       div {
-        flex-basis: 40vw;
+        flex-basis: 43vw;
         height: 30vw;
       }
 
-      section {
-        margin-top: 30px;
-      }
     }
 
     @media (max-width: 500px) {
       div {
-        flex-basis: 72vw;
+        flex-basis: 80vw;
         height: 54vw;
+      }
+
+      footer {
+        font-size: 13px;
       }
     }
   </style>
 </head>
 
 <body>
-  <nav>navigation</nav>
+  <nav>Gallery</nav>
   <section>
     <div><img src="img/pexels-photo-234883.jpeg" alt=""></div>
     <div><img src="img/pexels-photo-1890016.jpeg" alt=""></div>
@@ -115,8 +116,11 @@
     <div><img src="img/pexels-photo-860590.jpeg" alt=""></div>
     <div><img src="img/pexels-photo-860882.jpeg" alt=""></div>
     <div><img src="img/pexels-photo-990438.jpeg" alt=""></div>
+    <div><img src="img/pexels-photo-1843244.jpeg" alt=""></div>
+    <div><img src="img/pexels-photo-1767415.jpeg" alt=""></div>
+    <div><img src="img/pexels-photo-1540906.jpeg" alt=""></div>
   </section>
-  <footer>footer</footer>
+  <footer>“You only live once, but if you do it right, once is enough.” </footer>
 </body>
 
 </html>
