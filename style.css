@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 238, 228);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #2d2827;
+  padding-right: 50px;
+  width: 100%;
+  color: white;
+  text-align: right;
+  line-height: 70px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 30px;
+}
+
+section {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: bisque; */
+}
+
+div {
+  margin: 20px 0 0 0;
+  flex-basis: 21.5vw;
+  height: 15vw;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  filter: saturate(0.3);
+  transition: 1s;
+}
+
+img.imgSmall:hover {
+  filter: saturate(1);
+}
+
+footer {
+  background-color: #2d2827;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin: 0;
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+.fas {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.fa-chevron-left {
+  left: 20px;
+}
+
+.fa-chevron-right {
+  right: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.popUp {
+  margin: 0;
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  max-width: 100vw;
+  max-height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+}
+
+.imgSmall {
+  cursor: pointer;
+}
+
+.imgBig {
+  display: none;
+  filter: saturate(1);
+}
+
+.imgBig.show {
+  display: block;
+}
+
+@media (max-width: 1800px) {
+  div {
+    flex-basis: 28.5vw;
+    height: 21vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  div {
+    flex-basis: 43vw;
+    height: 30vw;
+  }
+
+  .popUp {
+    width: 90vw;
+    height: 65vw;
+  }
+
+}
+
+@media (max-width: 500px) {
+  div {
+    flex-basis: 80vw;
+    height: 54vw;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+}

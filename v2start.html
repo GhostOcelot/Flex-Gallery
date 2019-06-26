@@ -6,121 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flex Gallery</title>
+  <script src="https://kit.fontawesome.com/becf56bfd5.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    body {
-      /* background-color: burlywood; */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    nav {
-      background-color: #2d2827;
-      padding-right: 50px;
-      width: 100%;
-      color: white;
-      text-align: right;
-      line-height: 70px;
-      font-family: 'Slabo 27px', serif;
-      font-size: 30px;
-    }
-
-    section {
-      width: 90vw;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      /* background-color: bisque; */
-    }
-
-    div {
-      margin: 20px 0 0 0;
-      flex-basis: 21.5vw;
-      height: 15vw;
-      /* border: 1px solid black; */
-      overflow: hidden;
-    }
-
-    img {
-      height: 100%;
-      filter: saturate(0.3);
-      transition: 1s;
-    }
-
-    img:hover {
-      filter: saturate(1);
-
-    }
-
-    footer {
-      background-color: #2d2827;
-      margin-top: 20px;
-      width: 100%;
-      color: white;
-      text-align: center;
-      line-height: 40px;
-      font-family: 'Slabo 27px', serif;
-      font-size: 20px;
-    }
-
-    @media (max-width: 1800px) {
-      div {
-        flex-basis: 28.5vw;
-        height: 21vw;
-      }
-    }
-
-    @media (max-width: 1100px) {
-      div {
-        flex-basis: 43vw;
-        height: 30vw;
-      }
-
-    }
-
-    @media (max-width: 500px) {
-      div {
-        flex-basis: 80vw;
-        height: 54vw;
-      }
-
-      footer {
-        font-size: 13px;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <nav>Gallery</nav>
   <section>
-    <div><img src="img/pexels-photo-234883.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1890016.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1895239.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1838554.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1440403.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1543006.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-247968.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-54283.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-688832.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-860590.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-860882.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-990438.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1843244.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1767415.jpeg" alt=""></div>
-    <div><img src="img/pexels-photo-1540906.jpeg" alt=""></div>
+    <div><img src="img/pexels-photo-234883.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1890016.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1895239.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1838554.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1440403.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1543006.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-247968.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-54283.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-688832.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-860590.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-860882.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-990438.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1843244.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1767415.jpeg" alt="" class="imgSmall"></div>
+    <div><img src="img/pexels-photo-1540906.jpeg" alt="" class="imgSmall"></div>
   </section>
-  <footer>“You only live once, but if you do it right, once is enough.” </footer>
+  <div class="wrapper">
+    <div class="popUp">
+      <span><i class="fas fa-chevron-left"></i></span>
+      <span><i class="fas fa-chevron-right"></i></span>
+      <img src="img/pexels-photo-234883.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1890016.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1895239.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1838554.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1440403.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1543006.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-247968.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-54283.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-688832.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-860590.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-860882.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-990438.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1843244.jpeg" alt="" class="imgBig">
+      <img src="img/pexels-photo-1767415.jpeg" alt="" class="imgBig">
+    </div>
+  </div>
+  <footer>“You only live once, but if you do it right, once is enough...” </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
