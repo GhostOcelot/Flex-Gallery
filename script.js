@@ -9,8 +9,8 @@
 //   })
 // }
 
-// wrapper.addEventListener("click", function () {
-//   this.classList.remove("show");
-//   document.querySelector(".imgBig.show").classList.remove("show");
+wrapper.addEventListener("click", function () {
+  this.classList.remove("show");
+  document.querySelector(".imgBig.show").classList.remove("show");
 
 // })
